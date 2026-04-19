@@ -1,0 +1,18 @@
+[project]
+name = "prognoza-zapotrzebowania-na-energie"
+version = "1.0.0"
+description = "Analiza i prognozowanie zapotrzebowania na energię elektryczną w Hiszpanii (2015-2018)"
+readme = "README.md"
+requires-python = ">=3.12.8"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "pandas>=3.0.2",
+    "seaborn",
+    "scipy",
+    "scikit-learn",
+    "statsmodels",
+    "plotly",
+    "nbformat",
+    "ipykernel",
+    "nbconvert>=7.17.1",
+]
