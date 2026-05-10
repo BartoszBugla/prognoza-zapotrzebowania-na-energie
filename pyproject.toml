@@ -15,4 +15,7 @@ dependencies = [
     "nbformat",
     "ipykernel",
     "nbconvert>=7.17.1",
+    "entsoe-py",
+    "python-dotenv",
+    "tensorflow",
 ]
