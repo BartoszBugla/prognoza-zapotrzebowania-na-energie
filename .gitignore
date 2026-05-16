@@ -1,5 +1,9 @@
+.venv/
+.env
+.vscode/
 .local/
 __pycache__/
 *.pyc
 .DS_Store
-.env
+_test_*.ipynb
+docs/figures/

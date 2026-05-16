@@ -1,5 +1,41 @@
-## Zbiór danych 
+# Prognozowanie zapotrzebowania na energię — Hiszpania (2015–2018)
 
-https://www.kaggle.com/datasets/nicholasjhana/energy-consumption-generation-prices-and-weather
+Praca zaliczeniowa: **Analiza i wizualizacja danych – Pandas, DataFrame**  
+Uczelnia: Merito Chorzów | Zespół: Dawid Hetmańczyk (126674), Bartosz Bugla (180737)
 
-This dataset contains 4 years of electrical consumption, generation, pricing, and weather data for Spain. Consumption and generation data was retrieved from ENTSOE a public portal for Transmission Service Operator (TSO) data. Settlement prices were obtained from the Spanish TSO Red Electric España. Weather data was purchased as part of a personal project from the Open Weather API for the 5 largest cities in Spain and made public here.# prognoza-zapotrzebowania-na-energie
+## Pliki do oddania
+
+| Plik | Opis |
+|------|------|
+| `analiza.ipynb` | Główna analiza (Pandas) |
+| `docs/raport.docx` | Raport |
+| `docs/prezentacja.pptx` | Prezentacja |
+| `datasets/` | Dane CSV |
+
+Opcjonalnie (poza Pandas): `etl.ipynb`, `uczenie-maszynowe-projekt.ipynb`
+
+## Uruchomienie
+
+1. Otwórz `analiza.ipynb`
+2. **Run All** — pierwsza komórka kodu zainstaluje pakiety z `requirements.txt`
+3. Gotowe
+
+Ręcznie (jeśli wolisz terminal):
+
+```powershell
+pip install -r requirements.txt
+```
+
+## Dane
+
+[Kaggle – Energy Consumption, Generation, Prices and Weather](https://www.kaggle.com/datasets/nicholasjhana/energy-consumption-generation-prices-and-weather)
+
+## Regeneracja raportu / prezentacji
+
+```powershell
+.\.venv\Scripts\python scripts\build_docs.py
+```
+
+## Oddanie
+
+Udostępnić repozytorium prowadzącej na GitHub: **akkosan** (lub folder OneDrive sekcji).
