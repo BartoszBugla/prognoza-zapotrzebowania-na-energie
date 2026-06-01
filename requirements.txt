@@ -9,3 +9,6 @@ statsmodels
 nbformat
 ipykernel
 nbconvert
+python-docx
+python-pptx
+statsmodels

@@ -32,9 +32,13 @@ pip install -r requirements.txt
 
 ## Regeneracja raportu / prezentacji
 
+Skrypt buduje pełny raport Word (~10 rozdziałów, 8 wykresów) oraz prezentację PowerPoint (~25 slajdów) z **aktualnych wyników analizy**:
+
 ```powershell
 .\.venv\Scripts\python scripts\build_docs.py
 ```
+
+Wynik: `docs/raport.docx`, `docs/prezentacja.pptx`, `docs/figures/*.png`
 
 ## Oddanie
 
