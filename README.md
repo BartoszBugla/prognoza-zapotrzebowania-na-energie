@@ -1,45 +1,28 @@
-# Prognozowanie zapotrzebowania na energię — Hiszpania (2015–2018)
+# ⚡ Transformacja Energetyczna Polski (2015–2024)
 
-Praca zaliczeniowa: **Analiza i wizualizacja danych – Pandas, DataFrame**  
-Uczelnia: Merito Chorzów | Zespół: Dawid Hetmańczyk (126674), Bartosz Bugla (180737)
+> **Projekt zaliczeniowy:** Analiza i wizualizacja danych – Pandas, DataFrame  
+> **Uczelnia:** Uniwersytet WSB Merito Chorzów  
+> **Zespół:** Dawid Hetmańczyk (126674), Bartosz Bugla (180737)
 
-## Pliki do oddania
+Projekt analizuje ewolucję polskiego rynku energii w oparciu o dane z ENTSO-E. Przedstawia transformację z energetyki węglowej w stronę odnawialnych źródeł (OZE) i ukazuje bieżące wyzwania rynkowe (m.in. ujemne ceny energii i zjawisko *duck curve*).
 
-| Plik | Opis |
-|------|------|
-| `analiza.ipynb` | Główna analiza (Pandas) |
-| `docs/raport.docx` | Raport |
-| `docs/prezentacja.pptx` | Prezentacja |
-| `datasets/` | Dane CSV |
+## 🗂️ Struktura
+- **`_etl.ipynb`** – pobieranie danych z API ENTSO-E.
+- **`_data_transformation.ipynb`** – czyszczenie i konsolidacja danych.
+- **`_analysis.ipynb`** – główna analiza, wizualizacje (Plotly) i mapy interaktywne (Folium).
+- **`datasets/`** – surowe i przetworzone dane w formacie CSV.
 
-Opcjonalnie (poza Pandas): `etl.ipynb`, `uczenie-maszynowe-projekt.ipynb`
+## 🚀 Szybki start
 
-## Uruchomienie
+Projekt używa szybkiego menedżera pakietów **[uv](https://github.com/astral-sh/uv)**.
 
-1. Otwórz `analiza.ipynb`
-2. **Run All** — pierwsza komórka kodu zainstaluje pakiety z `requirements.txt`
-3. Gotowe
+```bash
+# 1. Instalacja zależności środowiska
+uv sync
 
-Ręcznie (jeśli wolisz terminal):
+# 2. Konfiguracja API (podaj swój klucz z ENTSO-E w pliku .env)
+cp .env.example .env
 
-```powershell
-pip install -r requirements.txt
+# 3. Uruchomienie środowiska Jupyter
+uv run --with jupyter jupyter lab
 ```
-
-## Dane
-
-[Kaggle – Energy Consumption, Generation, Prices and Weather](https://www.kaggle.com/datasets/nicholasjhana/energy-consumption-generation-prices-and-weather)
-
-## Regeneracja raportu / prezentacji
-
-Skrypt buduje pełny raport Word (~10 rozdziałów, 8 wykresów) oraz prezentację PowerPoint (~25 slajdów) z **aktualnych wyników analizy**:
-
-```powershell
-.\.venv\Scripts\python scripts\build_docs.py
-```
-
-Wynik: `docs/raport.docx`, `docs/prezentacja.pptx`, `docs/figures/*.png`
-
-## Oddanie
-
-Udostępnić repozytorium prowadzącej na GitHub: **akkosan** (lub folder OneDrive sekcji).

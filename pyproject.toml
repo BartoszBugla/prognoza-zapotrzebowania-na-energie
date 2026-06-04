@@ -18,4 +18,5 @@ dependencies = [
     "entsoe-py",
     "python-dotenv",
     "tensorflow",
+    "ipywidgets>=8.1.8",
 ]
